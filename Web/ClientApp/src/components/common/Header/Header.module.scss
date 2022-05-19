@@ -1,0 +1,24 @@
+.titleimg{
+  position: relative;
+  left: 12px;
+}
+.title {
+  color: white;
+  font-size: 20px;
+  padding-left: 20px;
+  display: flex;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; //높이중앙정렬
+  position: relative;
+  left: 12px;
+  
+  .top {
+    font-size: 28px;
+    margin-bottom: 6px;
+  }
+  .bottom {
+    font-size: 18px;
+  }
+}

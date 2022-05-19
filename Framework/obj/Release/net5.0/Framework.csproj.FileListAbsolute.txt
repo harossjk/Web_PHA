@@ -1,0 +1,16 @@
+D:\Project-E\WebDev\Framework\obj\Release\net5.0\Framework.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project-E\WebDev\Framework\obj\Release\net5.0\Framework.AssemblyInfoInputs.cache
+D:\Project-E\WebDev\Framework\obj\Release\net5.0\Framework.AssemblyInfo.cs
+D:\Project-E\WebDev\Framework\obj\Release\net5.0\Framework.csproj.CoreCompileInputs.cache
+D:\Project-E\WebDev\Framework\bin\Release\net5.0\Framework.deps.json
+D:\Project-E\WebDev\Framework\bin\Release\net5.0\Framework.dll
+D:\Project-E\WebDev\Framework\bin\Release\net5.0\ref\Framework.dll
+D:\Project-E\WebDev\Framework\bin\Release\net5.0\Framework.pdb
+D:\Project-E\WebDev\Framework\bin\Release\net5.0\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Project-E\WebDev\Framework\bin\Release\net5.0\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Project-E\WebDev\Framework\bin\Release\net5.0\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+D:\Project-E\WebDev\Framework\bin\Release\net5.0\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+D:\Project-E\WebDev\Framework\obj\Release\net5.0\Framework.dll
+D:\Project-E\WebDev\Framework\obj\Release\net5.0\ref\Framework.dll
+D:\Project-E\WebDev\Framework\obj\Release\net5.0\Framework.pdb
+D:\Project-E\WebDev\Framework\obj\Release\net5.0\Framework.csproj.AssemblyReference.cache

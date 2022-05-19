@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework", "Framework\Framework.csproj", "{0A468FCE-9173-4DFC-89CE-1E0A67CE912A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Framework", "01.Framework", "{A65B07CC-204F-4B9A-9F48-6D937E027280}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99.Web", "99.Web", "{5654586B-3F71-4A09-8781-DBD89EF750F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "Web\Web.csproj", "{C133DD1B-CA22-4873-8AED-1279DAA9D13B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A468FCE-9173-4DFC-89CE-1E0A67CE912A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A468FCE-9173-4DFC-89CE-1E0A67CE912A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A468FCE-9173-4DFC-89CE-1E0A67CE912A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A468FCE-9173-4DFC-89CE-1E0A67CE912A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C133DD1B-CA22-4873-8AED-1279DAA9D13B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C133DD1B-CA22-4873-8AED-1279DAA9D13B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C133DD1B-CA22-4873-8AED-1279DAA9D13B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C133DD1B-CA22-4873-8AED-1279DAA9D13B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0A468FCE-9173-4DFC-89CE-1E0A67CE912A} = {A65B07CC-204F-4B9A-9F48-6D937E027280}
+		{C133DD1B-CA22-4873-8AED-1279DAA9D13B} = {5654586B-3F71-4A09-8781-DBD89EF750F1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDE3C99B-F420-4BB4-BBA5-C3A0100C8D5D}
+	EndGlobalSection
+EndGlobal

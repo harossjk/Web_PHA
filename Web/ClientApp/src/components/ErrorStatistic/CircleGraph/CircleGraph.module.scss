@@ -1,0 +1,34 @@
+.container {
+  height: 300px;
+  position: relative;
+  .title {
+    margin: 15px 0px 0px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fdbc09;
+  }
+}
+// .circle {
+//   position: absolute;
+//   text-align: center;
+//   //   top: 16px;
+//   left: 132px;
+//   top: 31px;
+//   width: 216px;
+//   height: 216px;
+//   border-radius: 50%;
+//   background-color: none;
+//   z-index: 999999;
+// }
+
+// .circle:after {
+//   content: '';
+//   position: absolute;
+//   top: 5px;
+//   left: 5px;
+//   right: 5px;
+//   bottom: 5px;
+//   background: none;
+//   border: solid #1f2328 4px;
+//   border-radius: 50%;
+// }

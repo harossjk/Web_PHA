@@ -1,0 +1,247 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+
+  .contentsLeft {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin: 10px 15px 15px 10px;
+    border-radius: 5px;
+    // background-color: #1f2328;
+    background-color: #353b41;
+    box-shadow: 5px 5px 0px 0 rgba(0, 0, 0, 0.6);
+    position: relative;
+
+    .loaderPosition {
+      position: absolute;
+      top: 400px;
+      left: 600px;
+      z-index: 10;
+    }
+
+    .contentsTitle {
+      display: flex;
+      color: rgb(151, 151, 151);
+      font-size: 20px;
+      font-weight: 600;
+      margin: 10px 0px 5px 10px;
+
+      .injectionType {
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        justify-content: flex-end;
+        background-color: #353b41;
+        align-items: center;
+        margin-top: 1.5px;
+        margin-left: 400px;
+        div {
+          height: 26px;
+          display: flex;
+          flex-direction: row;
+          margin-right: 12px;
+          background-color: rgb(19, 19, 19);
+          font-size: 14px;
+          span {
+            display: flex;
+            margin-left: 15px;
+            align-items: center;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+    .contentMain {
+      display: flex;
+      flex-direction: row;
+      margin: 10px;
+      // background-color: #353b41;
+      background-color: #1f2328;
+      border: 1px solid rgb(117, 117, 117);
+      height: 93.5%; //이미지 height
+      position: relative;
+      justify-content: center;
+      // align-items: center;
+      .contentBackground {
+        width: 98%;
+        height: 98%;
+      }
+      .contentRackBackground {
+      }
+    }
+  }
+
+  .contentsRight {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+
+    .contentTop {
+      margin: 10px 15px 0px 0px;
+      background-color: #353b41;
+      height: 100%;
+      flex: 3;
+      box-shadow: 5px 5px 0px 0 rgba(0, 0, 0, 0.6);
+      border-radius: 5px;
+    }
+    .contentBottom {
+      height: 100%;
+      flex: 2;
+    }
+  }
+}
+
+//button
+$blue: rgb(35, 88, 158);
+$yellow: rgb(251, 255, 0);
+$red: rgb(255, 0, 0);
+$green: rgb(81, 255, 0);
+$gray: rgb(83, 83, 83);
+$pink: rgb(255, 0, 234);
+$blink: rgb(30, 255, 244);
+
+@mixin round-button($baseColor: $gray, $hoverBaseColor: rgb(168, 168, 168), $diameter: 0.75vw) {
+  background: $baseColor;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 -2px 0 3px darken($baseColor, 10%) inset, 0 5px 5px rgba(darken($baseColor, 40%), 0.17),
+    0 15px rgba(#fff, 0.25) inset;
+  cursor: pointer;
+  display: inline-block;
+  height: $diameter;
+  width: $diameter;
+  position: absolute;
+  &:hover {
+    background: $hoverBaseColor;
+    box-shadow: 0 -2px 0 3px darken($hoverBaseColor, 10%) inset, 0 5px 5px rgba(darken($hoverBaseColor, 40%), 0.17),
+      0 15px rgba(#fff, 0.32) inset;
+  }
+}
+
+/*사출기 상태 
+    viewStatus "Disconnect" : 계획휴지
+    viewStatus "Wait"       : 작업준비
+    viewStatus "Auto"       : 자동운전 
+    viewStatus "Alarm"      : 알람(이상)
+    viewStatus "Preheating" : 설비예열
+    viewStatus "Changemold" : 금형교체
+*/
+
+.Disconnect {
+  @include round-button;
+}
+.Alarm {
+  @include round-button($red);
+}
+.Auto {
+  @include round-button($green);
+}
+.Wait {
+  @include round-button;
+}
+.Manual {
+  @include round-button($yellow);
+}
+.Preheating {
+  @include round-button($blue);
+}
+.Changemold {
+  @include round-button($pink);
+}
+.Blink {
+  @include round-button($blink);
+  animation: blink-effect 1s step-end infinite;
+}
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+
+//hardPosition
+.position1 {
+  left: 382px;
+  top: 370px;
+}
+.position2 {
+  top: 24%;
+  left: 15.4%;
+}
+.gridTable {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  .tableCol {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    // :hover {
+    //   background-color: red;
+    // }
+    .tableRow {
+      display: flex;
+      border-bottom: 0px;
+      width: 100%;
+      height: 100%;
+      color: white;
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+}
+
+.icon0 {
+  color: rgb(30, 255, 244);
+  background-color: rgb(30, 255, 244);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.icon1 {
+  color: rgb(83, 83, 83);
+  background-color: rgb(83, 83, 83);
+  border-radius: 50%;
+  margin-right:5px;
+}
+.icon2 {
+  color: rgb(35, 88, 158);
+  background-color: rgb(35, 88, 158);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.icon3 {
+  color: rgb(251, 255, 0);
+  background-color: rgb(251, 255, 0);
+  border-radius: 50%;
+  margin-right: 5px;
+  
+}
+.icon4 {
+  color: rgb(255, 0, 234);
+  background-color: rgb(255, 0, 234);
+  border-radius: 50%;
+  margin-right: 5px;
+
+}
+.icon5 {
+  color: rgb(81, 255, 0);
+  background-color: rgb(81, 255, 0);
+  border-radius: 50%;
+  margin-right: 5px;
+
+}
+.icon6 {
+  color: rgb(255, 0, 0);
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  margin-right: 5px;
+
+}

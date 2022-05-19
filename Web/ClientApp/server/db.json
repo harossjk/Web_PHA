@@ -1,0 +1,238 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "company": "10477-AST",
+      "userid": "User4",
+      "name": "김철수",
+      "pw": "12345678",
+      "department": "임시부서1",
+      "regiuser": "홍길동1",
+      "regidate": "2021-07-21",
+      "auth": {
+        "baseinfo": {
+          "basecode": 0,
+          "cartype": 0,
+          "checksheet": 0,
+          "moldmaster": 0,
+          "partners": 0,
+          "recipe": 0,
+          "user": 0
+        },
+        "moldcnt": {
+          "moldclean": 0,
+          "moldcnt": 0,
+          "moldmodify": 0
+        },
+        "moldrepair": {
+          "completeresistration": 0,
+          "repairreport": 0,
+          "repairrequest": 0
+        },
+        "moldcheck": {
+          "daily": 0,
+          "ngregistration": 0,
+          "checksheet": 0,
+          "routine": 0,
+          "routinereport": 0
+        },
+        "moldinout": {
+          "inoutreport": 0,
+          "moldin": 0,
+          "moldout": 0
+        },
+        "Spare": {
+          "inputreport": 0,
+          "sparein": 0,
+          "sparemaster": 0,
+          "spareout": 0,
+          "sparestock": 0,
+          "usereport": 0
+        }
+      }
+    },
+    {
+      "id": 2,
+      "company": "10477-AST",
+      "userid": "User4",
+      "name": "김철수",
+      "pw": "12345678",
+      "department": "임시부서2",
+      "regiuser": "홍길동2",
+      "regidate": "2021-07-21",
+      "auth": {
+        "baseinfo": {
+          "basecode": 0,
+          "cartype": 0,
+          "checksheet": 0,
+          "moldmaster": 0,
+          "partners": 0,
+          "recipe": 0,
+          "user": 0
+        },
+        "moldcnt": {
+          "moldclean": 0,
+          "moldcnt": 0,
+          "moldmodify": 0
+        },
+        "moldrepair": {
+          "completeresistration": 0,
+          "repairreport": 0,
+          "repairrequest": 0
+        },
+        "moldcheck": {
+          "daily": 0,
+          "ngregistration": 0,
+          "checksheet": 0,
+          "routine": 0,
+          "routinereport": 0
+        },
+        "moldinout": {
+          "inoutreport": 0,
+          "moldin": 0,
+          "moldout": 0
+        },
+        "Spare": {
+          "inputreport": 0,
+          "sparein": 0,
+          "sparemaster": 0,
+          "spareout": 0,
+          "sparestock": 0,
+          "usereport": 0
+        }
+      }
+    },
+    {
+      "id": 3,
+      "company": "10477-AST",
+      "userid": "User4",
+      "name": "김철수",
+      "pw": "12345678",
+      "department": "임시부서3",
+      "regiuser": "홍길동3",
+      "regidate": "2021-07-21",
+      "auth": {
+        "baseinfo": {
+          "basecode": 0,
+          "cartype": 0,
+          "checksheet": 0,
+          "moldmaster": 0,
+          "partners": 0,
+          "recipe": 0,
+          "user": 0
+        },
+        "moldcnt": {
+          "moldclean": 0,
+          "moldcnt": 0,
+          "moldmodify": 0
+        },
+        "moldrepair": {
+          "completeresistration": 0,
+          "repairreport": 0,
+          "repairrequest": 0
+        },
+        "moldcheck": {
+          "daily": 0,
+          "ngregistration": 0,
+          "checksheet": 0,
+          "routine": 0,
+          "routinereport": 0
+        },
+        "moldinout": {
+          "inoutreport": 0,
+          "moldin": 0,
+          "moldout": 0
+        },
+        "Spare": {
+          "inputreport": 0,
+          "sparein": 0,
+          "sparemaster": 0,
+          "spareout": 0,
+          "sparestock": 0,
+          "usereport": 0
+        }
+      }
+    }
+  ],
+  "cartype": [
+    {
+      "id": 1,
+      "data1": "10477-AST",
+      "data2": "PH-평화공정",
+      "data3": "1D",
+      "data4": "1D",
+      "data5": "D8EM",
+      "data6": "D8EM",
+      "data7": "홍길동",
+      "data8": "2021-07-21"
+    }
+  ],
+  "companyList": [
+    {
+      "id": 1,
+      "company": "10477-AST"
+    },
+    {
+      "id": 2,
+      "company": "Company_A"
+    },
+    {
+      "id": 3,
+      "company": "Company_B"
+    }
+  ],
+  "departmentList": [
+    {
+      "id": 1,
+      "department": "부서1"
+    },
+    {
+      "id": 2,
+      "department": "부서2"
+    },
+    {
+      "id": 3,
+      "department": "부서3"
+    },
+    {
+      "id": 4,
+      "department": "CPS"
+    },
+    {
+      "id": 5,
+      "department": "MES"
+    }
+  ],
+  "regiUserData123": [
+    {
+      "id": 1,
+      "regiuser": "서동원"
+    },
+    {
+      "id": 2,
+      "regiuser": "김철수"
+    }
+  ],
+  "moldMaster": [
+    {
+      "id": 1,
+      "a": "금형 기본 정보"
+    },
+    {
+      "id": 2,
+      "b": "금형 상세 정보"
+    },
+    {
+      "id": 3,
+      "c": "기타 정보"
+    },
+    {
+      "id": 4,
+      "d": "금형 품목"
+    },
+    {
+      "id": 5,
+      "e": "추가 투자 금액"
+    }
+  ]
+}

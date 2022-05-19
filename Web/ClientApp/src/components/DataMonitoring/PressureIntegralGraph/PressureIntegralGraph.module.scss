@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 28px;
+  // background-color: rgb(30, 34, 44);
+  position: relative;
+  color: white;
+  margin: 10px 0px 0px 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.container {
+  width: 100%;
+}
+
+.contents {
+  margin-left: 10px;
+}
+
+.labelBox {
+  position: relative;
+  color: rgb(219, 219, 219);
+  font-weight: 600;
+  height: 0px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-align: right;
+  right: 50px;
+}
+
+.labelBox2 {
+  position: relative;
+  color: rgb(245, 245, 245);
+  // font-weight: 600;
+  height: 0px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-align: right;
+  right: 50px;
+  top: -30px;
+}
+
+.customTooltip {
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  margin: 140px 0px 0px 147px;
+}

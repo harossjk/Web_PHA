@@ -1,0 +1,115 @@
+.LinkDiv {
+  width: 100%;
+
+  // :hover {
+  //   background-color: whitesmoke;
+  // }
+}
+.LinkItem1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.LinkItem2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: 20px;
+  border-bottom: 1.5px solid rgb(100, 100, 100);
+  border-top: 1.5px solid rgb(100, 100, 100);
+  background-color: #353b41;
+}
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin: 10px 0px 10px 10px;
+}
+.icon {
+  position: relative;
+  width: 18px;
+  padding-right: 10px;
+  top: 3px;
+}
+.icon2 {
+  position: relative;
+  width: 22px;
+  padding-right: 10px;
+  top: 5px;
+}
+.icon3 {
+  position: relative;
+  width: 12px;
+  padding-right: 7px;
+}
+.contents {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  :hover {
+    background-color: #353b41;
+  }
+}
+
+.RackIconContent{
+  color: white;
+  text-decoration: none;
+  padding: 5px 0px 12px 10px;
+  padding-left: 26px;
+  cursor: pointer;
+  :hover{
+    color: rgb(247, 165, 57);
+  }
+}
+
+.content {
+  color: white;
+  text-decoration: none;
+  padding: 5px 0px 12px 10px;
+
+  &.clicked {
+    color: rgb(51, 158, 245);
+  }
+  &.clickedOrange {
+    color: rgb(247, 165, 57);
+  }
+
+  &.rack {
+    padding-left: 26px;
+    cursor: pointer;
+  }
+
+  &.subRack {
+    padding-left: 36px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    :hover {
+      background-color: #353b41;
+    }
+  }
+
+
+}
+
+.clickedContent {
+  color: white;
+  text-decoration: none;
+  padding: 5px 0px 12px 10px;
+  // background-color: #353b41;
+  color: rgb(247, 165, 57);
+}
+
+
+.subContent {
+  padding: 5px 0px 12px 10px;
+}
+.rackicon {
+  color: white;
+  font-size: 30px;
+}

@@ -1,0 +1,101 @@
+import React, { useEffect, useState } from 'react'
+import myStyle from './Rack2.module.scss'
+import moldA from '../../../asset/img/moldA.png'
+import moldB from '../../../asset/img/moldB.png'
+import { toJS } from 'mobx';
+import { observer } from 'mobx-react';
+interface props {
+    filterData: any;
+    loading: boolean;
+    selectY?: number;
+    moldList: any;
+    rackIconClicked: boolean;
+}
+
+const Rack2 = ({ filterData, loading, selectY, moldList, rackIconClicked }: props) => {
+
+    console.log("들어온 moldList", moldList);
+    console.log("filterData", toJS(filterData));
+    console.log("selectY", selectY);
+    useEffect(() => {
+
+    }, [moldList]);
+
+    //금형이미지 같은위치 중복제거
+    const uniqueMoldPosition = moldList.filter((el: any, idx: any, arr: any) => {
+        return arr.findIndex((item: any) => item.y === el.y) === idx
+    });
+    // console.log("uniqueMoldPosition", toJS(uniqueMoldPosition));
+
+    //금형명 리스트에 랜더링
+    const moldNameRender = () => {
+        let array = [];
+        for (let i = 1; i <= 4; i++) {
+            array.push(
+                <div className={myStyle.moldInfoItem}>
+                    <div className={myStyle.moldInfoTitle}>적재리스트</div>
+                    <div className={myStyle.moldNameList}>
+                        <div className={myStyle.moldNameListLayout}>
+                            {
+                                [...Array(4)].map((n, j) => {
+                                    return (
+                                        <div key={j} className={myStyle.moldNameItemBox}>
+                                        </div>
+                                    )
+                                })
+                            }
+                            <div className={myStyle.moldNameListValue}>
+                                {
+                                    moldList.map((el: any, idx: number) => {
+                                        if (i === Number(el.y)) {
+                                            if (el.moldName === filterData.moldName) {
+                                                return (
+                                                    <div key={idx} className={myStyle.moldNameListValueItem}>
+                                                        <span className={myStyle.font2}>{el.moldName}</span>
+                                                    </div>
+                                                )
+                                            }
+                                            return (
+                                                <div key={idx*1000} className={myStyle.moldNameListValueItem}>
+                                                    <span className={myStyle.font}>{el.moldName}</span>
+                                                </div>
+                                            )
+                                        }
+
+                                    })
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+        return array;
+    }
+
+    return (
+        <>
+            {
+                !loading && <div className={myStyle.gridTable}>
+                    <div className={myStyle.moldBoxList}>
+                        {uniqueMoldPosition.map((el: any) => {
+                            // if (selectY === Number(el.y) && el.moldName === filterData.moldName) {
+                            if (el.moldName === filterData.moldName) {
+                                return <div className={myStyle.moldBoxItem}><img src={moldB} alt="" className={myStyle.imgStyle} /></div>
+                            }
+                            return <div className={myStyle.moldBoxItem}><img src={moldA} alt="" className={myStyle.imgStyle} /></div>
+                        })}
+                    </div>
+                    <div className={myStyle.moldInfoList}>
+                        {moldNameRender()}
+                    </div>
+                </div>
+            }
+        </>
+    )
+}
+
+export default observer(Rack2)
+
+
+

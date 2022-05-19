@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80px;
+  .filter {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    width: 100%;
+    justify-content: center;
+    .dropDown {
+      display: flex;
+    }
+    .timePicker {
+      display: flex;
+    }
+  }
+  .bottonBox {
+    display: flex;
+    flex: 2;
+    width: 100%;
+    margin: 5px;
+    background-color: #1f2328;
+    border-radius: 5px;
+    flex-direction: row;
+
+    .expert {
+      display: flex;
+      flex: 1;
+      background-color: rgb(160, 160, 160);
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: 600;
+      color: rgb(255, 255, 255);
+      margin: 7px;
+    }
+    .search {
+      display: flex;
+      flex: 1;
+      background-color: rgb(255, 61, 13);
+      margin-left: 0px;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: 600;
+      color: rgb(255, 255, 255);
+      margin: 7px 7px 7px 3px;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.container {
+  margin: 10px 15px 0px 10px;
+  margin-top: 0px;
+  border-radius: 5px;
+  background-color: #353b41;
+  box-shadow: 5px 5px 0px 0 rgba(0, 0, 0, 0.6);
+}
+.header {
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #353b41;
+  text-align: center;
+  display: flex;
+  align-items: center; //높이중앙정렬
+  justify-content: center; // 좌우중앙정렬
+  span {
+    color: rgb(219, 219, 219);
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.contents {
+  display: grid;
+  grid: '. . .';
+  gap: 10px;
+  border: 10px solid #353b41;
+  background: #353b41;
+  height: 230px;
+}
+.nonSelectedItem {
+  width: 520px;
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  background: #1f2328;
+  border-radius: 5px;
+  border: 1.5px solid rgb(109, 109, 109);
+  cursor: pointer;
+}
+.nonSelectedItem:hover{
+  background-color: #31363b;
+}
+.selectedItem {
+  cursor: pointer;
+  width: 520px;
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  border-radius: 5px;
+  background: #1f2328;
+  border: 2px solid rgb(109, 109, 109);
+  animation: blinker 3s linear infinite;
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+.selectedItem:hover{
+  background-color: #31363b;
+}
+.injectionIcon {
+  height: 50px;
+}
+
+.injectionType {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: flex-end;
+  height: 50px;
+  background-color: #353b41;
+  align-items: center;
+
+  div {
+    height: 26px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 12px;
+    margin-top: 14px;
+    background-color: rgb(19, 19, 19);
+    span {
+      display: flex;
+      margin-left: 15px;
+      align-items: center;
+      gap: 8px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.value {
+  vertical-align: middle;
+  // display: flex;
+  align-items: center;
+  color: rgb(219, 219, 219);
+  margin-left: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+//iconStyle
+.icon1 {
+  color: rgb(83, 83, 83);
+  background-color: rgb(83, 83, 83);
+}
+.icon2 {
+  color: rgb(35, 88, 158);
+  background-color: rgb(35, 88, 158);
+}
+.icon3 {
+  color: rgb(251, 255, 0);
+  background-color: rgb(251, 255, 0);
+}
+.icon4 {
+  color: rgb(255, 0, 234);
+  background-color: rgb(255, 0, 234);
+}
+.icon5 {
+  color: rgb(81, 255, 0);
+  background-color: rgb(81, 255, 0);
+}
+.icon6 {
+  color: rgb(255, 0, 0);
+  background-color: rgb(255, 0, 0);
+}

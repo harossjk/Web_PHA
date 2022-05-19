@@ -1,0 +1,104 @@
+.position {
+  display: flex;
+  position: relative;
+  margin: 10px;
+  background-color: #262a2e;
+  height: 458px; //0317 삭제하면 요소길이 만큼.
+  border: 1px solid rgb(85, 85, 85);
+  border-radius: 5px;
+
+  .settingBtn {
+    position: absolute;
+    left: -300%;
+    margin-top: -38px;
+  }
+
+  .nonClickbox {
+    width: 90px;
+  }
+  .clickBox {
+    width: 120px;
+  }
+  .boxes {
+    height: 190px;
+    &.scroll {
+      white-space: nowrap;
+      overflow-y: scroll;
+    }
+  }
+  .boxItem {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .iconCustom {
+      position: relative;
+      line-height: 2;
+      top: 3px;
+    }
+    .textCustom {
+      line-height: 2;
+      font-size: 16px;
+      width: 30px;
+      margin-left: 2px;
+    }
+  }
+
+  .settingBox {
+    display: flex;
+    flex-direction: row;
+    .checkBox {
+      margin: 10px 5px 0px 7px;
+    }
+    .textCustom {
+      line-height: 2;
+      font-size: 16px;
+      width: 30px;
+      margin-left: 2px;
+    }
+    .colorBox {
+      margin: 5px 5px 0px 0px;
+    }
+  }
+
+  .saveIconPosition {
+    margin-left: 60px;
+  }
+  .pTitle {
+    height: 30px;
+    background: #ffd919;
+    border-bottom: 1px solid rgb(88, 88, 88);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #262a2e;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 6px;
+    font-weight: 700;
+  }
+  .tTitle {
+    height: 30px;
+    background: #e33030;
+    border-bottom: 1px solid rgb(88, 88, 88);
+    color: #e0e0e0;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 6px;
+    font-weight: 700;
+  }
+}
+
+.boxes::-webkit-scrollbar {
+  width: 12px; /*스크롤바의 너비*/
+  display: none;
+}
+
+.boxes::-webkit-scrollbar-thumb {
+  background-color: #8a8a8a; /*스크롤바의 색상*/
+  border-radius: 50px;
+}
+
+.boxes::-webkit-scrollbar-track {
+  background-color: #262a2e; /*스크롤바 트랙 색상*/
+}

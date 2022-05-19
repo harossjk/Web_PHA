@@ -1,0 +1,67 @@
+@import "~ag-grid-community/src/styles/ag-grid.scss";
+// @import "~ag-grid-community/src/styles/ag-theme-alpine/sass/ag-theme-alpine-mixin";
+
+//페이지 기본 패딩
+@mixin pagePadding {
+    padding: 0 1% 0 1%;
+    box-sizing: border-box;
+}
+
+@mixin ColFlexBox {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin RowFlexBox {
+    display: flex;
+    flex-direction: row;
+}
+
+$grayBorderColor: #dcdfe2;
+$TitleLabelColor: #4D4D4D;
+$ContentTopMargin: 40px;
+
+$webPrimaryColor : #176793;
+$webPrimaryLightColor : #3190c4;
+$webPrimaryDarkColor : rgb(13, 89, 129);
+$mobilePrimaryColor : #F5451C;
+
+//******달력******
+$repairPrimaryColor: #177a93;
+$repairDarkColor: #0d6277;
+$repairLightColor: #299ab6;
+$repairGrayColor: #849fa5;
+
+$checkRegPrimaryColor: #17936A;
+$checkRegDarkColor: #086647;
+$checkRegLightColor: #3cc094;
+$checkRegGrayColor: #84A595;
+//******End 달력******
+
+.emptyLine {
+    height: 30px;
+}
+
+.rowLandering {
+    text-align: left;
+    float: left;
+    flex-direction: row;
+    display: flex;
+    padding: 25px 30px 0px 30px;
+    gap: 20px;
+}
+
+.basePage {
+    padding: 10px;
+    border-width: 0px;
+}
+
+// .ag-theme-alpine {
+//     @include ag-theme-alpine((
+//         cell-horizontal-border: solid ag-derived(secondary-border-color),
+//     ));
+
+//     .ag-header-cell {
+//         border-right: 1px solid ag-param(secondary-border-color);
+//     }
+//   }

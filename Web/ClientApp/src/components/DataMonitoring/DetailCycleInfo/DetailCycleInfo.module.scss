@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80px;
+  background-color: #1f2328;
+  z-index: 10;
+  .filter {
+    display: flex;
+    flex-direction: row;
+    flex: 4;
+    width: 100%;
+    justify-content: center;
+    z-index: 2;
+    .dropDown {
+      display: flex;
+      z-index: 2;
+      flex: 5;
+    }
+    .timePicker {
+      display: flex;
+    }
+    .bottonBox {
+      display: flex;
+      flex: 3;
+      width: 100%;
+      margin: 5px;
+      background-color: #1f2328;
+      border-radius: 5px;
+      flex-direction: row;
+
+      .expert {
+        display: flex;
+        flex: 1;
+        background-color: rgb(160, 160, 160);
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        margin: 7px;
+      }
+      .search {
+        display: flex;
+        flex: 1;
+        background-color: rgb(255, 61, 13);
+        margin-left: 0px;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        margin: 7px 7px 7px 3px;
+      }
+    }
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color: #1f2328;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    .contentsLeft {
+      display: flex;
+      flex: 1;
+      background-color: red;
+    }
+    .contentsRight {
+      display: flex;
+      flex: 1;
+      background-color: blue;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.container {
+  height: 174px;
+  background-color: #1f2328;
+  margin: 5px 10px 10px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  .list {
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: scroll;
+
+    .item {
+      display: flex;
+      flex-direction: row;
+      height: 45px;
+      background-color: #1f2328;
+      width: 95%;
+      margin: 10px 15px 0px 10px;
+      border: 1px solid rgb(94, 94, 94);
+      .leftLine {
+        width: 9px;
+        background-color: rgb(245, 48, 48);
+      }
+      .contents {
+        padding-left: 12px;
+
+        .title {
+          color: rgb(245, 48, 48);
+          font-weight: bold;
+        }
+        .time{
+            color: white;
+            font-weight: bold; 
+            font-size: 14px;
+        }
+      }
+    }
+
+
+    .itemhover {
+      display: flex;
+      flex-direction: row;
+      height: 45px;
+      background-color: #1f2328;
+      width: 95%;
+      margin: 10px 15px 0px 10px;
+      border: 1px solid rgb(72, 247, 115);
+      cursor: pointer;
+      .leftLine {
+        width: 9px;
+        background-color: rgb(245, 48, 48);
+      }
+
+      .contents {
+        padding-left: 12px;
+
+        .title {
+          color: rgb(245, 48, 48);
+          font-weight: bold;
+        }
+        .time{
+            color: white;
+            font-weight: bold; 
+            font-size: 14px;
+        }
+      }
+    }
+
+
+  }
+}
+.list::-webkit-scrollbar {
+  width: 12px; /*스크롤바의 너비*/
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: #8a8a8a; /*스크롤바의 색상*/
+  border-radius: 50px;
+}
+
+.list::-webkit-scrollbar-track {
+  background-color: rgba(41, 41, 41, 0.85); /*스크롤바 트랙 색상*/
+}
